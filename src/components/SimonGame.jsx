@@ -104,7 +104,7 @@ function SimonGame() {
     <div className="flex justify-center items-center bg-neutral-800 text-white w-screen h-screen">
       {/* Game container */}
       <div className="relative flex flex-col justify-center items-center">
-        <h1 className="pb-10 text-3xl font-bold">Simon Game</h1>
+        {/* <h1 className="pb-10 text-3xl font-bold">Simon Game</h1> */}
         {/* Green and red container */}
         <div>
           {/* Green button */}
@@ -149,7 +149,7 @@ function SimonGame() {
 
         {/* Play button */}
         <button 
-          className="absolute mt-12 bg-neutral-900 text-white text-xl sm:text-2xl font-bold rounded-full w-[150px] sm:w-[175px] h-[150px] sm:h-[175px] duration-200 hover:scale-105" 
+          className="absolute bg-neutral-900 text-white text-xl sm:text-2xl font-bold rounded-full w-[150px] sm:w-[175px] h-[150px] sm:h-[175px] duration-200 hover:scale-105" 
           onClick={handelNextLevel}>
           {sequence.length === 0 ? "Play" : sequence.length}
         </button>
